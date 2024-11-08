@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working with the form</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="wrapper">
+        <div class="subscribe">
+            <div class="subscribe__wrapper">
+                <h1 class="title">
+                    Подпишись!
+                </h1>
+                <form type="post" action="#" class="subscribe__form">
+                    <div class="subscribe__wrapper-input">
+                        <div class="subscribe__wrapper-hint" data-hint-name>
+                            <div class="subscribe__hint">Имя должно содержать только буквы</div>
+                        </div>
+                        <label for="name" class="subscribe__label">Имя</label>
+                        <input type="text" name="email" class="subscribe__input" id="name" placeholder="Enter your name" tabindex="1" required>
+                    </div>
+                    <div class="subscribe__wrapper-input">
+                        <div class="subscribe__wrapper-hint" data-hint-email>
+                            <div class="subscribe__hint">Не забудьте символ @</div>
+                        </div>
+                        <label for="email" class="subscribe__label">Почта</label>
+                        <input type="email" name="email" class="subscribe__input" id="email" placeholder="Enter your email" tabindex="2" required>
+                    </div>
+                    <div class="subscribe__wrapper-input">
+                        <div class="subscribe__wrapper-hint" data-hint-tel>
+                            <div class="subscribe__hint">Вводите только 11 цифр</div>
+                        </div>
+                        <label for="tel" class="subscribe__label">Телефон</label>
+                        <input type="tel" name="email" class="subscribe__input" id="tel" placeholder="Enter your number" tabindex="3" required>
+                    </div>
+                    <button disabled class="btn subscribe__btn" type="submit" tabindex="4">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>
